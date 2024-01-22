@@ -66,7 +66,9 @@ function setup() {
   //video2 = createCapture(video);
   video2 = createCapture({
     video:{
-      facingMode:"enviroment"
+      facingMode: {
+        exact: "enviroment"
+      }
     }
     });
   video2.hide();
