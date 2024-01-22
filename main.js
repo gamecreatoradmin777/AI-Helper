@@ -63,7 +63,12 @@ function setup() {
   createCanvas(640, 520);
   //createCanvas(1000, 1000);
   //Create the video
-  video2 = createCapture(video);
+  //video2 = createCapture(video);
+  video2 = createCapture({
+    video:{
+      facingMode:"enviroment"
+    }
+    });
   video2.hide();
 
   // Start classifying
