@@ -1,4 +1,4 @@
-const video = document.getElementById('video');
+//const video = document.getElementById('video');
 const button = document.getElementById('button');
 const select = document.getElementById('select');
 //const devices = await navigator.mediaDevices.enumerateDevices();
@@ -57,7 +57,7 @@ function preload() {
   classifier = ml5.imageClassifier(modelURL + 'model.json');
 }
 
-video = currentStream;
+//video = currentStream;
 
 function setup() {
   createCanvas(640, 520);
